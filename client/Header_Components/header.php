@@ -9,14 +9,11 @@
     <link rel="icon" type="image/png" href="assets/food2.ico">
     <!-- CSS -->
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/food_products.css">
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <header class="bg-dark">
-        <div class="container">
-            <?php include 'navbar.php'; ?>
-        </div>
-    </header>
+    <?php include 'navbar.php'; ?>

@@ -1,0 +1,74 @@
+.food-card {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-radius: 5px;
+    background-color: #efefef;
+    transition: box-shadow 0.3s;
+}
+
+.food-card:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.image-in-card {
+    width: 400px;
+    height: 280px;
+}
+
+/* Button styles */
+.stylish-button {
+    display: inline-block;
+    padding: 8px 16px;
+    color: #000000;
+    background-color: #9DBC98;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 125px;
+    /* Set a fixed width for the buttons */
+    text-align: center;
+    /* Center the text horizontally */
+    overflow: hidden;
+    /* Hide overflow if text exceeds button width */
+    white-space: nowrap;
+    /* Prevent text wrapping */
+}
+
+/* Hover effect */
+.stylish-button:hover {
+    background-color: #697f66;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+@media (max-width: 576px) {
+    .image-in-card {
+        width: 75%;
+        height: auto;
+    }
+
+    .stylish-button {
+        width: 70%;
+        padding: 6px 10px;
+        border-radius: 10px;
+        font-size: .6rem;
+    }
+
+    .food-card {
+        font-size: .6rem;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .image-in-card {
+        width: 75%;
+        height: auto;
+    }
+
+    .stylish-button {
+        width: 50%;
+    }
+}
