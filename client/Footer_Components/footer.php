@@ -1,4 +1,4 @@
-<footer class="bg-dark py-4">
+<footer class="bg-dark py-4 text-center ">
     <div class="container">
         <p class="text-light">&copy; <?php echo date("Y"); ?> Simple PHP Page. All rights reserved.</p>
     </div>

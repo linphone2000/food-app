@@ -1,18 +1,22 @@
-<main class="vh-100">
-    <div class="container h-100">
-        <div class="row align-items-center h-100">
-            <div class="col">
-                <section>
-                    <h2>Main Content Section</h2>
-                    <p>This is the main content section of the page.</p>
-                    <img src="assets/akmh.jpg" width="100">
-                </section>
+<main class="">
+    <div class="">
 
-                <?php
-                $message = "Hello";
-                echo "<section><p>$message</p></section>";
-                ?>
+        <!-- Carousel -->
+        <section>
+            <?php include 'food_carousel.php'; ?>
+        </section>
+
+        <!-- Food Menu -->
+        <section class="text-center p-5">
+            <div class="">
+                <?php include 'Food_Menu/food_products.php'; ?>
             </div>
-        </div>
+        </section>
+
+        <!-- Some Dummy -->
+        <!-- <?php
+                $message = "Dummy Text";
+                echo "<section><p class=\"m-0\">$message</p></section>";
+                ?> -->
     </div>
 </main>
