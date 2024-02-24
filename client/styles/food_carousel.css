@@ -1,0 +1,13 @@
+/* Adjust image sizes for mobile devices */
+@media (max-width: 767px) {
+    .carousel-item .desktop-tablet-image {
+        display: none !important;
+    }
+}
+
+/* Adjust image sizes for desktops and tablets */
+@media (min-width: 768px) {
+    .carousel-item .mobile-image {
+        display: none !important;
+    }
+}
