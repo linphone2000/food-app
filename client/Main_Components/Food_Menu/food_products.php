@@ -46,7 +46,8 @@ $foodProducts = [
 ];
 ?>
 
-<?php include 'filter.php'; ?>
+<!-- Filter section -->
+<?php include 'food_filter.php'; ?>
 
 <section id="products" class="row">
     <!-- "No Product found will come here" -->
@@ -67,15 +68,21 @@ $foodProducts = [
                     <p class="">Price: $<?php echo number_format($product['price'], 2); ?></p>
                     <p class="">Quantity: <?php echo $product['quantity']; ?></p>
                     <!-- Buttons -->
-                    <a href="#" class="stylish-button">Add to Cart</a>
-                    <a href="#" class="stylish-button">See Details</a>
+                    <a href="#" class="stylish-button add-to-cart" id="liveToastBtn" onclick="event.preventDefault(); showToast('<?php echo $product['name']; ?>');">Add to Cart</a>
+                    <a href="#" class="stylish-button see-details" data-bs-toggle="modal" data-bs-target="#exampleModal" data-product-index="<?php echo $index; ?>" data-product-name="<?php echo $product['name']; ?>" data-product-category="<?php echo $product['category']; ?>" data-product-price="<?php echo $product['price']; ?>" data-product-quantity="<?php echo $product['quantity']; ?>">
+                        See Details
+                    </a>
                 </div>
             </div>
         </div>
     <?php endforeach; ?>
 
+    <!-- Include the modal -->
+    <?php include 'food_modal.php'; ?>
+
+    <!-- Toaster -->
+    <?php include 'food_toaster.php'; ?>
+
 </section>
-
-
 
 <script src="Main_Components/Food_Menu/filter.js"></script>

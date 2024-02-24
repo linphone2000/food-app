@@ -12,49 +12,115 @@
 }
 
 .image-in-card {
-    width: 400px;
-    height: 280px;
+    width: 80%;
+    height: auto;
+    max-height: 228px;
 }
 
-/* Button styles */
+
+.apply-button {
+    color: #ffffff !important;
+    background-color: #3652AD !important;
+    border-radius: 25px !important;
+}
+
+.apply-button:hover {
+    background-color: #280274 !important;
+    color: #ffffff !important;
+}
+
 .stylish-button {
     display: inline-block;
     padding: 8px 16px;
-    color: #000000;
-    background-color: #9DBC98;
+    color: #ffffff;
+    background-color: #3652AD;
     border: none;
     border-radius: 25px;
     cursor: pointer;
     transition: background-color 0.3s;
     width: 125px;
-    /* Set a fixed width for the buttons */
     text-align: center;
-    /* Center the text horizontally */
     overflow: hidden;
-    /* Hide overflow if text exceeds button width */
     white-space: nowrap;
-    /* Prevent text wrapping */
 }
 
-/* Hover effect */
 .stylish-button:hover {
-    background-color: #697f66;
+    background-color: #280274;
     color: #ffffff;
     text-decoration: none;
 }
 
+.btn-close {
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+}
 
+.btn-close::before,
+.btn-close::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 20px;
+    background-color: black;
+}
+
+.btn-close::before {
+    transform: rotate(45deg);
+}
+
+.btn-close::after {
+    transform: rotate(-45deg);
+}
+
+.toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.toast.show {
+    opacity: 1;
+}
+
+
+/* Mobiles */
 @media (max-width: 576px) {
-    .image-in-card {
-        width: 75%;
-        height: auto;
+    #Menu {
+        padding: 0.5rem 1rem !important;
     }
+
+    #products { /* The row */
+        padding: 0rem 0.5rem;
+    }
+
+    .product {
+        padding: 0rem 0.25rem !important;
+    }
+
+    .image-in-card {
+        width: 70%;
+        height: auto;
+        max-width: 140px;
+        max-height: 85px;
+    }
+
 
     .stylish-button {
         width: 70%;
         padding: 6px 10px;
         border-radius: 10px;
         font-size: .6rem;
+        margin-bottom: 5px;
     }
 
     .food-card {
@@ -62,13 +128,17 @@
     }
 }
 
-@media (min-width: 1024px) and (max-width: 1366px) {
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1366px) {
     .image-in-card {
         width: 75%;
         height: auto;
+        max-width: 216px;
+        max-height: 140px;
     }
 
     .stylish-button {
         width: 50%;
+        margin-bottom: 5px;
     }
 }

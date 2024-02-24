@@ -6,13 +6,16 @@
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img class="d-block w-100" src="https://via.placeholder.com/800x400" alt="First slide">
+            <img class="d-block w-100 mobile-image" src="https://via.placeholder.com/400x800" alt="First slide">
+            <img class="d-block w-100 desktop-tablet-image" src="https://via.placeholder.com/800x400" alt="First slide">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="https://via.placeholder.com/800x400" alt="Second slide">
+            <img class="d-block w-100 mobile-image" src="https://via.placeholder.com/400x800" alt="Second slide">
+            <img class="d-block w-100 desktop-tablet-image" src="https://via.placeholder.com/800x400" alt="Second slide">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="https://via.placeholder.com/800x400" alt="Third slide">
+            <img class="d-block w-100 mobile-image" src="https://via.placeholder.com/400x800" alt="Third slide">
+            <img class="d-block w-100 desktop-tablet-image" src="https://via.placeholder.com/800x400" alt="Third slide">
         </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
