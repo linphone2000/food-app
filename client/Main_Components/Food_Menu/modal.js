@@ -1,5 +1,6 @@
 // Function to show product details in modal
 function showProductDetails(button) {
+  var modalTitle = document.getElementById("exampleModalLabel");
   var modalBody = document.getElementById("productDetailsBody");
   var product = {
     name: button.getAttribute("data-product-name"),
@@ -8,8 +9,11 @@ function showProductDetails(button) {
     quantity: parseInt(button.getAttribute("data-product-quantity")),
   };
 
+  modalTitle.innerHTML = `
+    <h4>${product.name}</h4>
+  `;
+
   modalBody.innerHTML = `
-        <h5>${product.name}</h5>
         <p>Category: ${product.category}</p>
         <p>Price: $${product.price.toFixed(2)}</p>
         <p>Quantity: ${product.quantity}</p>

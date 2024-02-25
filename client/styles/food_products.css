@@ -17,6 +17,12 @@
     max-height: 228px;
 }
 
+.product-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-height: 3rem;
+}
 
 .apply-button {
     border-radius: 25px !important;
@@ -124,6 +130,10 @@
         height: auto;
         max-width: 140px;
         max-height: 85px;
+    }
+
+    .product-title{
+        padding: 0 0.6rem;
     }
 
     .apply-button {

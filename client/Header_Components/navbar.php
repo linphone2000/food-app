@@ -1,7 +1,7 @@
 <nav id="navbar-scroll" class="navbar navbar-expand-lg sticky-top navbar-dark class-for-navbar">
     <div class="container">
         <a class="navbar-brand" href="#Home">
-            ChopChop
+            <img src="assets/Chop_Chop_Logo_Pink.png" class="navbar-logo" />
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
