@@ -1,5 +1,5 @@
 .food-card {
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding-top: 5%;
     padding-bottom: 5%;
     border-radius: 5px;
@@ -19,14 +19,25 @@
 
 
 .apply-button {
-    color: #ffffff !important;
-    background-color: #3652AD !important;
     border-radius: 25px !important;
+    background-color: #4CAF50 !important;
+    color: white !important;
+    margin: auto 0.5rem;
 }
 
 .apply-button:hover {
-    background-color: #280274 !important;
+    background-color: #3b873d !important;
+}
+
+.clear-button {
+    border-radius: 25px !important;
+    background-color: #ff5252 !important;
     color: #ffffff !important;
+    margin: auto 0.5rem;
+}
+
+.clear-button:hover {
+    background-color: #c44242 !important;
 }
 
 .stylish-button {
@@ -99,7 +110,8 @@
         padding: 0.5rem 1rem !important;
     }
 
-    #products { /* The row */
+    #products {
+        /* The row */
         padding: 0rem 0.5rem;
     }
 
@@ -114,6 +126,13 @@
         max-height: 85px;
     }
 
+    .apply-button {
+        width: 25% !important;
+    }
+
+    .clear-button {
+        width: 25% !important;
+    }
 
     .stylish-button {
         width: 70%;
@@ -137,8 +156,19 @@
         max-height: 140px;
     }
 
+    .apply-button {
+        font-size: 0.75rem;
+        width: 30% !important;
+    }
+
+    .clear-button {
+        font-size: 0.75rem;
+        width: 30% !important;
+    }
+
     .stylish-button {
         width: 50%;
         margin-bottom: 5px;
+        font-size: 0.75rem;
     }
 }

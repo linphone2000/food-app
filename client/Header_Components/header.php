@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="styles/food_products.css">
     <link rel="stylesheet" href="styles/food_carousel.css">
     <link rel="stylesheet" href="styles/food_filter.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/footer.css">
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>

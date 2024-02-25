@@ -1,0 +1,9 @@
+footer {
+    background-color: #f15932;
+}
+
+@media (max-width: 576px) {
+    .location-text-con {
+        margin-top: 1rem;
+    }
+}

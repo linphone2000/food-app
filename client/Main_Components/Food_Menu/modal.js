@@ -28,7 +28,7 @@ document.querySelectorAll(".see-details").forEach((button) => {
 function showToast(productName) {
   var toastElement = document.getElementById("customToast");
   var productNameElement = toastElement.querySelector("#productName");
-  productNameElement.textContent = productName + " added to cart"; // Update product name
+  productNameElement.textContent = "( 1 ) " + productName + " added to cart"; // Update product name
   toastElement.classList.add("show");
   setTimeout(function () {
     toastElement.classList.remove("show");

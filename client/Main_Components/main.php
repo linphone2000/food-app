@@ -1,7 +1,7 @@
 <main>
     <!-- Carousel -->
     <section id="Home">
-        <?php include 'food_carousel.php'; ?>
+        <?php include 'Food_Carousel/food_carousel.php'; ?>
     </section>
 
     <!-- Food Menu -->

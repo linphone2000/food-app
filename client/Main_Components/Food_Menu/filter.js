@@ -29,10 +29,25 @@ document
       }
     });
 
-    // Toggle on/off of "No products found" 
+    // Toggle on/off of "No products found"
     if (!foundProduct) {
       noProductsFound.classList.remove("d-none");
     } else {
       noProductsFound.classList.add("d-none");
     }
   });
+
+function clearFilters() {
+  // Reset category and price selections
+  document.getElementById("category").value = "";
+  document.getElementById("price").value = "";
+
+  // Show all products
+  var products = document.querySelectorAll(".product");
+  products.forEach(function (product) {
+    product.style.display = "block";
+  });
+
+  // Hide "No products found"
+  document.getElementById("noProductsFound").classList.add("d-none");
+}
