@@ -7,6 +7,7 @@ function showProductDetails(button) {
     category: button.getAttribute("data-product-category"),
     price: parseFloat(button.getAttribute("data-product-price")),
     quantity: parseInt(button.getAttribute("data-product-quantity")),
+    description: button.getAttribute("data-description"),
   };
 
   modalTitle.innerHTML = `
@@ -15,7 +16,9 @@ function showProductDetails(button) {
 
   modalBody.innerHTML = `
         <p>Category: ${product.category}</p>
-        <p>Price: $${product.price.toFixed(2)}</p>
+        <p>Description: ${product.description}</p>
+        <p>Lunch Price: $${product.price.toFixed(2)}</p>
+        <p>Evening Price: $${(product.price + 1).toFixed(2)}</p>
         <p>Quantity: ${product.quantity}</p>
     `;
   $("#exampleModal").modal("show"); // Show modal

@@ -6,6 +6,7 @@ $foodProducts = [
         'category' => 'Starter',
         'price' => 1.99,
         'quantity' => 10,
+        'Description' => 'Deep-fried crispy chicken in Chop Chop’s own home-made sauce (a.k.a Mega) with fried vegetables over rice',
         'image' => 'assets/chicken_ball.jpg',
     ],
     [
@@ -13,6 +14,7 @@ $foodProducts = [
         'category' => 'Main Dish',
         'price' => 2.49,
         'quantity' => 5,
+        'Description' => 'Deep-fried crispy chicken in bread crumbs with Mega sauce and fried veg over rice',
         'image' => 'assets/chicken_katsu_curry.jpg',
     ],
     [
@@ -20,6 +22,7 @@ $foodProducts = [
         'category' => 'Starter',
         'price' => 1.29,
         'quantity' => 3,
+        'Description' => 'Deep-fried crispy chicken balls in a spicy sweet & sour sauce over rice',
         'image' => 'assets/chicken_mega.jpg',
     ],
     [
@@ -27,6 +30,7 @@ $foodProducts = [
         'category' => 'Main Dish',
         'price' => 2.49,
         'quantity' => 5,
+        'Description' => 'Deep-fried crispy chicken balls in a spicy sweet & sour sauce over rice',
         'image' => 'assets/katsu_deopbap.jpg',
     ],
     [
@@ -34,6 +38,7 @@ $foodProducts = [
         'category' => 'Main Dish',
         'price' => 1.29,
         'quantity' => 3,
+        'Description' => 'Deep-fried crispy chicken balls in a spicy sweet & sour sauce over rice',
         'image' => 'assets/katsu_mega.jpg',
     ],
     [
@@ -41,6 +46,7 @@ $foodProducts = [
         'category' => 'Starter',
         'price' => 1.29,
         'quantity' => 3,
+        'Description' => 'Deep-fried crispy chicken balls in a spicy sweet & sour sauce over rice',
         'image' => 'assets/mixed_chicken_ball.jpg',
     ],
     [
@@ -48,6 +54,7 @@ $foodProducts = [
         'category' => 'Main Dish',
         'price' => 1.29,
         'quantity' => 3,
+        'Description' => 'Deep-fried crispy chicken balls in a spicy sweet & sour sauce over rice',
         'image' => 'assets/prawn_deopbap.jpg',
     ],
     [
@@ -55,6 +62,7 @@ $foodProducts = [
         'category' => 'Starter',
         'price' => 1.29,
         'quantity' => 3,
+        'Description' => 'Deep-fried crispy chicken balls in a spicy sweet & sour sauce over rice',
         'image' => 'assets/red_tofu.jpg',
     ],
     [
@@ -62,6 +70,7 @@ $foodProducts = [
         'category' => 'Side Dish',
         'price' => 1.29,
         'quantity' => 3,
+        'Description' => 'Deep-fried crispy chicken balls in a spicy sweet & sour sauce over rice',
         'image' => 'assets/tofu_curry.jpg',
     ],
     [
@@ -69,6 +78,7 @@ $foodProducts = [
         'category' => 'Main Dish',
         'price' => 1.29,
         'quantity' => 3,
+        'Description' => 'Deep-fried crispy chicken balls in a spicy sweet & sour sauce over rice',
         'image' => 'assets/tofu_deopbap.jpg',
     ],
     [
@@ -76,6 +86,7 @@ $foodProducts = [
         'category' => 'Main Dish',
         'price' => 1.29,
         'quantity' => 3,
+        'Description' => 'Deep-fried crispy chicken balls in a spicy sweet & sour sauce over rice',
         'image' => 'assets/tofu_mega.jpg',
     ],
     [
@@ -83,6 +94,7 @@ $foodProducts = [
         'category' => 'Starter',
         'price' => 1.29,
         'quantity' => 3,
+        'Description' => 'Deep-fried crispy chicken balls in a spicy sweet & sour sauce over rice',
         'image' => 'assets/tofu_teriyaki.jpg',
     ],
 ];
