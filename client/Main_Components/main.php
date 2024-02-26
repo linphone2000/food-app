@@ -5,7 +5,7 @@
     </section>
 
     <!-- Food Menu -->
-    <section class="p-5">
+    <section id="Food-menu" class="p-5">
         <div class="">
             <?php include 'Food_Menu/food_products.php'; ?>
         </div>

@@ -24,27 +24,6 @@
     max-height: 3rem;
 }
 
-.apply-button {
-    border-radius: 25px !important;
-    background-color: #4CAF50 !important;
-    color: white !important;
-    margin: auto 0.5rem;
-}
-
-.apply-button:hover {
-    background-color: #3b873d !important;
-}
-
-.clear-button {
-    border-radius: 25px !important;
-    background-color: #ff5252 !important;
-    color: #ffffff !important;
-    margin: auto 0.5rem;
-}
-
-.clear-button:hover {
-    background-color: #c44242 !important;
-}
 
 .stylish-button {
     display: inline-block;
@@ -67,53 +46,10 @@
     text-decoration: none;
 }
 
-.btn-close {
-    width: 20px;
-    height: 20px;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    position: relative;
-}
-
-.btn-close::before,
-.btn-close::after {
-    content: '';
-    position: absolute;
-    width: 2px;
-    height: 20px;
-    background-color: black;
-}
-
-.btn-close::before {
-    transform: rotate(45deg);
-}
-
-.btn-close::after {
-    transform: rotate(-45deg);
-}
-
-.toast {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.toast.show {
-    opacity: 1;
-}
-
-
 /* Mobiles */
 @media (max-width: 576px) {
-    #Menu {
-        padding: 0.5rem 1rem !important;
+    #Food-menu {
+        padding: 0.5rem 1.5rem !important;
     }
 
     #products {
@@ -132,16 +68,8 @@
         max-height: 85px;
     }
 
-    .product-title{
+    .product-title {
         padding: 0 0.6rem;
-    }
-
-    .apply-button {
-        width: 25% !important;
-    }
-
-    .clear-button {
-        width: 25% !important;
     }
 
     .stylish-button {
@@ -164,16 +92,6 @@
         height: auto;
         max-width: 216px;
         max-height: 140px;
-    }
-
-    .apply-button {
-        font-size: 0.75rem;
-        width: 30% !important;
-    }
-
-    .clear-button {
-        font-size: 0.75rem;
-        width: 30% !important;
     }
 
     .stylish-button {
