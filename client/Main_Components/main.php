@@ -1,11 +1,11 @@
 <main>
     <!-- Carousel -->
     <section id="Home">
-        <?php include 'food_carousel.php'; ?>
+        <?php include 'Food_Carousel/food_carousel.php'; ?>
     </section>
 
     <!-- Food Menu -->
-    <section id="Menu" class="text-center p-5">
+    <section id="Food-menu" class="p-5">
         <div class="">
             <?php include 'Food_Menu/food_products.php'; ?>
         </div>

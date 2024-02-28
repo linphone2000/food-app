@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FOOD PHP Page</title>
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/food2.ico">
+    <link rel="icon" type="image/png" href="assets/favicon.ico">
     <!-- CSS -->
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/food_products.css">
     <link rel="stylesheet" href="styles/food_carousel.css">
     <link rel="stylesheet" href="styles/food_filter.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/food_letter.css">
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
