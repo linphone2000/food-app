@@ -37,7 +37,11 @@ function showToast(productName) {
   var productNameElement = toastElement.querySelector("#productName");
   productNameElement.textContent = "( 1 ) " + productName + " added to cart"; // Update product name
   toastElement.classList.add("show");
+  toastElement.style.zIndex = 100;
   setTimeout(function () {
     toastElement.classList.remove("show");
   }, 3000); // Hide the toast after 3 seconds
+  setTimeout(function () {
+    toastElement.style.zIndex = -1;
+  }, 3000);
 }

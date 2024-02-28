@@ -13,8 +13,9 @@
 
 .image-in-card {
     width: 80%;
-    height: auto;
-    max-height: 228px;
+    height: 228px;
+    object-fit: cover;
+    margin-bottom: 1rem;
 }
 
 .product-title {
@@ -63,9 +64,9 @@
 
     .image-in-card {
         width: 70%;
-        height: auto;
-        max-width: 140px;
-        max-height: 85px;
+        height: 85px;
+        object-fit: cover;
+        margin-bottom: 0.7rem;
     }
 
     .product-title {
@@ -89,9 +90,9 @@
 @media (min-width: 768px) and (max-width: 1366px) {
     .image-in-card {
         width: 75%;
-        height: auto;
-        max-width: 216px;
-        max-height: 140px;
+        height: 140px;
+        object-fit: cover;
+        margin-bottom: 0.8rem;
     }
 
     .stylish-button {
