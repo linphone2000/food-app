@@ -1,17 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Menu Item</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-</head>
+    <?php include './Header_Components/header.php'; ?>
+    
+    <?php include './Main_Components/main.php';?>
 
-<body>
-    <div class="container">
-        <h2 class="mt-4 mb-4">Add Menu Item</h2>
+     <div class="container-fluid px-4">
+        <h1 class="mt-4 mb-4">Add Menu Item</h1>
         <form action="insert_menu.php" method="POST" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="name">Name:</label>
@@ -43,14 +36,10 @@
                 <input type="file" class="form-control-file" id="img" name="img" accept="image/*" required>
             </div>
 
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn text-light" style="background-color:#f15932;">Submit</button>
         </form>
     </div>
 
-    <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
+    <?php include './Footer_Components/footer.php'; ?>
 
-</html>
+</div>
