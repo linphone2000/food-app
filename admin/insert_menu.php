@@ -28,8 +28,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo "Large file!<br>";
             $error[] = "File larger than 2 Megabyte!";
         } elseif (empty($error)) {
-            $destination = "./assets/uploads/" . $filename;
-            if (move_uploaded_file($filetmp, $destination)) {
+            echo "Current directory: " . getcwd() . "<br>";
+            if (move_uploaded_file($filetmp, "./assets/uploads/" . $filename)) {
                 echo "Image Uploaded!<br>";
 
                 // Insert data into the database
