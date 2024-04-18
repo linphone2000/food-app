@@ -31,10 +31,11 @@
                         <p>Evening Price: £<?php echo number_format($product['price']+1, 2); ?></p>
                         <p>Quantity: <?php echo $product['quantity']; ?></p>
                         <!-- Buttons -->
-                        <a href="#" class="stylish-button add-to-cart" id="liveToastBtn" onclick="event.preventDefault(); showToast('<?php echo $product['name']; ?>');">Quick Add</a>
-                        <a href="#" class="stylish-button see-details" data-bs-toggle="modal" data-bs-target="#exampleModal" data-product-index="<?php echo $index; ?>" data-product-name="<?php echo $product['name']; ?>" data-product-category="<?php echo $product['category']; ?>" data-product-price="<?php echo $product['price']; ?>" data-product-quantity="<?php echo $product['quantity']; ?>" data-description="<?php echo $product['description']; ?>">
+                        <button href="#" class="stylish-button add-to-cart" id="liveToastBtn"
+                         onclick="event.preventDefault(); showToast('<?php echo $product['name']; ?>');">Quick Add</button>
+                        <button href="#" class="stylish-button see-details" data-bs-toggle="modal" data-bs-target="#exampleModal" data-product-index="<?php echo $index; ?>" data-product-name="<?php echo $product['name']; ?>" data-product-category="<?php echo $product['category']; ?>" data-product-price="<?php echo $product['price']; ?>" data-product-quantity="<?php echo $product['quantity']; ?>" data-description="<?php echo $product['description']; ?>">
                             See Details
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div>

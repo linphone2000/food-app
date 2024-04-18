@@ -6,7 +6,16 @@
 .login-button:hover {
     color: white !important;
 }
+h1 {
+    background-color: #fff!important;
+}
 
+
+a
+{
+    text-decoration: none;
+    
+}
 .navbar {
     font-family: 'Merriweather', serif;
     /* Headings */
@@ -17,6 +26,7 @@
     max-width: 50px !important;
     border-radius: 5px;
 }
+
 
 /* Desktops and Laptops */
 @media (min-width: 1024px) {

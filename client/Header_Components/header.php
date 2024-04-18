@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="styles/food_letter.css">
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c2e33c8cd9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
