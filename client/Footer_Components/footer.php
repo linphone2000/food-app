@@ -5,7 +5,8 @@
                 <div class="row">
                     <div class="col-md-6 d-flex align-content-center flex-wrap ">
                         <a href="https://maps.app.goo.gl/eNUkmgk6X1rb5PzH7">
-                            <img src="assets/ChopChopLocation.png" class="img-fluid rounded border border-white border-5" alt="Location of ChopChop" />
+                            <img src="assets/ChopChopLocation.png"
+                                class="img-fluid rounded border border-white border-5" alt="Location of ChopChop" />
                         </a>
                     </div>
                     <div class="col-md-6 d-flex flex-column justify-content-between location-text-con">
@@ -29,7 +30,7 @@
         </div>
     </footer>
 </section>
-
+</div>
 <!-- Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>

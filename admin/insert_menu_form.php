@@ -3,6 +3,8 @@
     
     <?php include './Main_Components/main.php';?>
 
+    <?php include './load_category.php' ?>
+
      <div class="container-fluid px-4">
         <h1 class="mt-4 mb-4">Add Menu Item</h1>
         <form action="insert_menu.php" method="POST" enctype="multipart/form-data">
@@ -13,7 +15,14 @@
 
             <div class="form-group">
                 <label for="category">Category:</label>
-                <input type="text" class="form-control" id="category" name="category" required>
+                <select name="category" id="category" class="form-control" required>
+                    <?php foreach ($categories as $index => $cats) : ?>
+                    <option value="<?php echo $cats['id']?>">
+                    <?php echo $cats["name"]?>
+                    </option>
+                    <?php endforeach ;?>
+                </select>
+                <!-- <input type="text" class="form-control" id="category" name="category" required> -->
             </div>
 
             <div class="form-group">
