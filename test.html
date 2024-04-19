@@ -42,3 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 </body>
 </html>
+<?php
+                foreach ($_SESSION['food_cart'] as $item) {
+                    echo "Product ID: " . $item['id'] . ", Quantity: " . $item['qty'] . "<br>";
+                } ?>

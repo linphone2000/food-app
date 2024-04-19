@@ -17,23 +17,34 @@
         </div>
 
         <!-- Showing menus -->
-        <?php foreach ($foodProducts as $index => $product) : ?>
-            <div class="col-6 col-lg-4 product <?php echo $product['category']; ?>" data-price="<?php echo $product['price']; ?>">
+        <?php foreach ($foodProducts as $index => $product): ?>
+            <div class="col-6 col-lg-4 product <?php echo $product['category']; ?>"
+                data-price="<?php echo $product['price']; ?>">
                 <!-- Product card -->
                 <div class="mb-4 food-card">
-                    <img src="../admin/assets/uploads/<?php echo $product['image']; ?>" class="image-in-card" alt="<?php echo $product['name']; ?>">
+                    <img src="../admin/assets/uploads/<?php echo $product['image']; ?>" class="image-in-card"
+                        alt="<?php echo $product['name']; ?>">
                     <!-- Card body -->
                     <div class="rounded-5 my-2">
                         <!-- Product details -->
-                        <h5 class="product-title"><?php echo $product['name']; ?></h5>
+                        <h5 class="product-title"><?php echo $product['name'];
+                        // echo $product['id'] ?></h5>
                         <p>Category: <?php echo $product['category']; ?></p>
                         <p>Lunch Price: £<?php echo number_format($product['price'], 2); ?></p>
-                        <p>Evening Price: £<?php echo number_format($product['price']+1, 2); ?></p>
+                        <p>Evening Price: £<?php echo number_format($product['price'] + 1, 2); ?></p>
                         <p>Quantity: <?php echo $product['quantity']; ?></p>
                         <!-- Buttons -->
-                        <button href="#" class="stylish-button add-to-cart" id="liveToastBtn"
-                         onclick="event.preventDefault(); showToast('<?php echo $product['name']; ?>');">Quick Add</button>
-                        <button href="#" class="stylish-button see-details" data-bs-toggle="modal" data-bs-target="#exampleModal" data-product-index="<?php echo $index; ?>" data-product-name="<?php echo $product['name']; ?>" data-product-category="<?php echo $product['category']; ?>" data-product-price="<?php echo $product['price']; ?>" data-product-quantity="<?php echo $product['quantity']; ?>" data-description="<?php echo $product['description']; ?>">
+                        <button href="#" class="stylish-button add-to-cart" data-id="<?php echo $product['id']; ?>"
+                            data-qty="<?php echo $product['quantity']; ?>" id="liveToastBtn" onclick="event.preventDefault(); 
+                            showToast('<?php echo $product['name']; ?>');">
+                            Add to Cart</button>
+                        <button href="#" class="stylish-button see-details" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal" data-product-index="<?php echo $index; ?>"
+                            data-product-name="<?php echo $product['name']; ?>"
+                            data-product-category="<?php echo $product['category']; ?>"
+                            data-product-price="<?php echo $product['price']; ?>"
+                            data-product-quantity="<?php echo $product['quantity']; ?>"
+                            data-description="<?php echo $product['description']; ?>">
                             See Details
                         </button>
                     </div>
@@ -49,3 +60,6 @@
 
     </section>
 </div>
+
+<!-- Add to cart -->
+<script src='Main_Components/Food_Menu/addToCart.js'></script>
